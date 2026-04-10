@@ -169,9 +169,9 @@ class SmartLampController(QMainWindow):
         self._update_live_label()
         self._update_status()
 
-        self._poll = QTimer()
-        self._poll.timeout.connect(self._sync_from_device)
-        self._poll.start(3000)
+        # self._poll = QTimer()
+        # self._poll.timeout.connect(self._sync_from_device)
+        # self._poll.start(3000)
 
     def _slider_group(self, title, name, lo, hi, default, callback):
         g = QGroupBox(title)
